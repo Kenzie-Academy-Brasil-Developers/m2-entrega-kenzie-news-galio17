@@ -1,0 +1,145 @@
+:root {
+    --roboto-slab: 'Roboto Slab', serif;
+    --title-1: 700 2rem var(--roboto-slab);
+    --title-2: 700 1.75rem var(--roboto-slab);
+    --title-3: 500 1rem var(--roboto-slab);
+    --title-4: 500 0.75rem var(--roboto-slab);
+    --details: 300 0.75rem var(--roboto-slab);
+    --color-primary: #5163D3;
+    --color-secondary: #D7E4FB;
+    --white: #f5f5f5;
+    --black: #1B1C1E;
+    --grey: #EEEEEE;
+    --light-grey: #F9F9F9;
+}
+
+body {
+    color: var(--black);
+    font: 0.75rem var(--roboto-slab);
+}
+
+header {
+    background-color: var(--color-primary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    padding: 15px;
+}
+
+main {
+    margin: 54px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+}
+
+.newsContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.news {
+    display: flex;
+    align-items: flex-end;
+}
+
+.newsItem {
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    padding: 35px 16px;
+    box-shadow: 3px 3px 5px #1b1c1e1a;
+}
+
+.news__figure {
+    display: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info__category {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 4px;
+    padding: 2px 8px;
+    width: max-content;
+    font: var(--title-4);
+}
+
+.info__title {
+    color: var(--color-primary);
+    font: var(--title-3);
+}
+
+.info__font {
+    font: var(--details);
+}
+
+.newsContainer--main {
+    width: 100%;
+}
+
+.newsContainer--main .newsItem {
+    padding: 0px;
+    border: none;
+}
+
+.newsContainer--main .news__figure {
+    display: initial;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    opacity: 0.75;
+}
+
+.newsContainer--main .news__img {
+    height: 100%;
+}
+
+.newsContainer--main .info {
+    padding: 15px;
+    position: absolute;
+}
+
+.newsContainer--main .info__category {
+    background: var(--white);
+    color: var(--color-primary);
+    border-radius: 4px;
+    padding: 2px 10px;
+    width: max-content;
+}
+
+.newsContainer--main .info__title {
+    color: var(--white);
+    -webkit-text-stroke: 0.3px var(--black);
+    font: var(--title-2);
+}
+
+.newsContainer--main .info__description {
+    display: none;
+}
+
+.newsContainer--main .info__font {
+    color: var(--white);
+    font: var(--details);
+}
+
+footer {
+    background-color: var(--grey);
+    width: 100%;
+}
+
+footer h4 {
+    padding: 15px;
+    font: var(--details);
+    text-align: center;
+}
