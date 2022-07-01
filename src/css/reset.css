@@ -1,0 +1,13 @@
+body, header, main, footer, section, article, a, h2, h3, h4, p, span, figure, img {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a, h2, h3, h4, p, span {
+    color: inherit;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
