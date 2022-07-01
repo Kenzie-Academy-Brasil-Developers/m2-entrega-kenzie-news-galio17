@@ -4,18 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script defer type="module" src="src/app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/reset.css">
+        <link rel="stylesheet" href="src/css/style.css">
+        <script defer type="module" src="src/js/app.js"></script>
         <title>Kenzie news</title>
     </head>
     <body>
         <header>
             <img src="src/img/Logo.png" alt="logo">
         </header>
-        <main class="container">
-            <section class="container__news news">
-                <article class="newsItem" id="mainNews"></article>
+        <main>
+            <section class="newsContainer newsContainer--main">
+                <article class="news__newsItem newsItem" id="mainNews"></article>
             </section>
-            <section id="newsContainer"></section>
+            <section class="newsContainer" id="newsContainer"></section>
         </main>
         <footer>
             <h4>Kenzie News | Todos os Direitos Reservados</h4>

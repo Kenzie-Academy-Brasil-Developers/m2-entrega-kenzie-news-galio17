@@ -22,10 +22,12 @@ export class News {
     
     static createNews(news) {
         const newsLink = document.createElement('a');
+        const newsFigure = document.createElement('figure');
         const newsImg = document.createElement('img');
         const newsInfo = this.createNewsInfo(news);
 
         newsLink.classList.add('newsContainer__news', 'news');
+        newsFigure.classList.add('news__figure');
         newsImg.classList.add('news__img');
         newsInfo.classList.add('news__info', 'info');
 
@@ -33,7 +35,8 @@ export class News {
         newsLink.target = '_blank'
         newsImg.src = news.imagem;
 
-        newsLink.append(newsImg, newsInfo);
+        newsFigure.append(newsImg);
+        newsLink.append(newsFigure, newsInfo);
 
         return newsLink;
     }
@@ -53,9 +56,9 @@ export class News {
         newsCategory.innerText = categoria;
         newsTitle.innerText = titulo;
         newsDescription.innerText = resumo;
-        newsFont.innerText = fonte;
+        newsFont.innerText = `Fonte: ${fonte}`;
 
-        newsInfo.append(newsCategory, newsTitle, newsDescription, newsDescription)
+        newsInfo.append(newsCategory, newsTitle, newsDescription, newsFont)
 
         return newsInfo;
     }
